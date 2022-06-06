@@ -14,7 +14,9 @@ export interface Item {
 	price: number
 }
 
-export interface ByDay { [day: string]: number }
+export interface ByDay {
+	[day: string]: number
+}
 
 export interface CustomerReport {
 	customer: Customer
@@ -27,4 +29,11 @@ export interface Product {
 	id: string
 	product: string
 	price: string
+}
+
+export interface Receipt {
+	customerId: string
+	productId: string
+	quantity: number
+	createdAt: string
 }
